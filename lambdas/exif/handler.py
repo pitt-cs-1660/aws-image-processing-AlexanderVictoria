@@ -49,6 +49,7 @@ def exif_handler(event, context):
                     # download image from S3
                     image = download_from_s3(bucket_name, object_key)
 
+
                     # extract EXIF metadata
                     exif_data = {
                         'width': image.width,
